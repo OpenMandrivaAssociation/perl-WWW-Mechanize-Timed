@@ -3,7 +3,7 @@
 Summary:	WWW::Mechanize::Timed - Time Mechanize requests
 Name:		perl-%{module}
 Version:	0.42
-Release: %mkrel 3
+Release: %mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
@@ -25,6 +25,8 @@ of the HTTP request. These can then be used in monitoring systems.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
