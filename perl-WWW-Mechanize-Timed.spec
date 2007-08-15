@@ -2,8 +2,8 @@
 
 Summary:	WWW::Mechanize::Timed - Time Mechanize requests
 Name:		perl-%{module}
-Version:	0.42
-Release: %mkrel 5
+Version:	0.43
+Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
