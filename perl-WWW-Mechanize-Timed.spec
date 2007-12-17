@@ -12,7 +12,6 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(LWPx::TimedHTTP)
 BuildRequires:  perl(WWW::Mechanize)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module is a subclass of WWW::Mechanize that times each stage
