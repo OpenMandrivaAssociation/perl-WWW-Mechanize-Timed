@@ -2,7 +2,7 @@
 
 Summary:	WWW::Mechanize::Timed - Time Mechanize requests
 Name:		perl-%{module}
-Version:	0.43
+Version:	0.44
 Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
