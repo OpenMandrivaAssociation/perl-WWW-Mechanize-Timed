@@ -2,14 +2,14 @@
 %define upstream_version 0.44
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	WWW::Mechanize::Timed - Time Mechanize requests
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW//%{upstream_name}-%{upstream_version}.tar.bz2
+URL:		https://metacpan.org/dist/WWW-Mechanize-Timed
+Source0:	https://cpan.metacpan.org/authors/id/L/LB/LBROCARD/WWW-Mechanize-Timed-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
