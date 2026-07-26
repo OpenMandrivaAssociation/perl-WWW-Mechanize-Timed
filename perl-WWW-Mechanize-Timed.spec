@@ -1,15 +1,13 @@
 %define upstream_name    WWW-Mechanize-Timed
-%define upstream_version 0.44
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.44
+Release:	6
 
 Summary:	WWW::Mechanize::Timed - Time Mechanize requests
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/WWW-Mechanize-Timed
-Source0:	https://cpan.metacpan.org/authors/id/L/LB/LBROCARD/WWW-Mechanize-Timed-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/L/LB/LBROCARD/WWW-Mechanize-Timed-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ This module is a subclass of WWW::Mechanize that times each stage
 of the HTTP request. These can then be used in monitoring systems.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -43,9 +41,7 @@ make test
 %changelog
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.440.0-1mdv2010.0
 + Revision: 401915
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.44-2mdv2009.0
+- rebuild using %0.44 Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.44-2mdv2009.0
 + Revision: 268876
 - rebuild early 2009.0 package (before pixel changes)
 
